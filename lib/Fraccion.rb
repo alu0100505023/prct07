@@ -9,7 +9,17 @@ class Fraccion
 	def to_s
 		"#{@n}/#{@d}"		
 	end
-		
-	
+	def min 
+		a=gcd(@n,@d)
+
+		@n = @n/a
+		@d = @d/a
+
+		if gcd(@n, @d) > 1
+			self.min
+		end
+	end
+			
 end
+
 

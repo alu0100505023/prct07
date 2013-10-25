@@ -9,7 +9,6 @@ class Fraccion
 	def to_s
 		"#{@n}/#{@d}"		
 	end
-		
 	def min 
 		a=gcd(@n,@d)
 
@@ -20,5 +19,7 @@ class Fraccion
 			self.min
 		end
 	end
+		
+	
 end
 

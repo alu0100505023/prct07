@@ -10,14 +10,26 @@ describe Fraccion do
 	it "Guardado del numerador" do
 		@f.n.should eq(2)
 	end
+
 	it "Guardado del denominador" do
 		@f.d.should eq(6)
+	end
+
 	end
 	
 	describe "Control de la forma reducida" do
 	it "Forma reducida" do
 		@f.min
 		@f.to_s.should eq("1/3")
+		end
+	end
+
+	describe "Control de obtencion de numerador y denominador" do
+		it "Devuelve numerador" do
+		@f.getn().should eq(2)
+		end
+		it "Devuelve denominador" do
+		@f.getd().should eq(4)
 		end
 	end
 	
