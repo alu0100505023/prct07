@@ -82,6 +82,13 @@ class Fraccion
 		f4.min
 		"#{f4.n/f4.d}"
 	end
+	def % (other)
+		a=@n*other.getd()
+		b=@d*other.getn()
+		c=Fraccion.new(a,b)
+		d=c.getn()%c.getd()
+		return d	
+	end
 end
 
 

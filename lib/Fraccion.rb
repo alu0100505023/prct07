@@ -89,6 +89,17 @@ class Fraccion
 		d=c.getn()%c.getd()
 		return d	
 	end
+	
+	def <(other)
+		a=@.to_f/@d.to_f
+		b=other.n.to_f/other.d.to_f
+	
+		if a<b
+			return true
+		else
+			return false
+		end
+	end
 end
 
 
