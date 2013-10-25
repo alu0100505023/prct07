@@ -32,6 +32,20 @@ class Fraccion
 		puts "Flotante: #{@n.to_f/@d.to_f}"
 		"#{@n/@d}"
 	end
+
+	def abs
+		n = @n
+		d = @d
+
+		if @n < 0
+			n = -@n
+		end
+
+		if @d < 0
+			d = -@d
+		end
+		Fraccion.new(n, d)
+	end
 end
 
 
