@@ -35,8 +35,17 @@ describe Fraccion do
 	
 	describe "Mostrando por consola la fraccion en flotante" do
 		it "Comprobando si se muestra la fraccion flotante" do
-			@f.flotante.should eq("#{@f.n()/@f.d()}")
+			@f.flotante.should eq("#{@f.getn()/@f.getd()}")
 		end
 	end
+
+	describe "Control de igualdad de fracciones" do
+		it "Comprobando si dos fracciones son iguales" do
+			f1=Fraccion.new(5,7);
 	
+			@f.==(f1).should eq(false)
+		
+	end
+
+		
 end

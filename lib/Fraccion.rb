@@ -27,7 +27,11 @@ class Fraccion
 	def getd
 		return @d
 	end
-			
+	
+	def flotante
+		puts "Flotante: #{@n.to_f/@d.to_f}"
+		"#{@n/@d}"
+	end
 end
 
 

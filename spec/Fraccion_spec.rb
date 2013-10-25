@@ -38,5 +38,22 @@ describe Fraccion do
 			@f.flotante.should eq("#{@f.getn()/@f.getd()}")
 		end
 	end
+
+	describe "Control de igualdad de fracciones" do
+		it "Comprobando si dos fracciones son iguales" do
+			f1=Fraccion.new(5,7);
 	
+			@f.==(f1).should eq(false)
+		
+	end
+	
+	describe "Control del valor absoluto" do
+		it "Comprobando el valor absoluto de una funcion" do
+
+			f2=Fraccion.new(-9,3)
+			f2.abs.to_s.should eq("9/3")
+		end
+	end
+
+		
 end
