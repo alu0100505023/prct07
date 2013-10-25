@@ -3,7 +3,7 @@ require "lib/Fraccion.rb"
 describe Fraccion do
 
 	before :each do
-		@f=Fraccion.new()
+		@f=Fraccion.new(2,6)
 	end
 	
 	describe "Control de almacenamiento de variables" do
