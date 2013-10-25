@@ -68,6 +68,13 @@ class Fraccion
 		f4.min
 		"#{f4.n/f4.d}"
 	end
+	def * (other)
+		n=@n*other.n
+		d=@d*other.d
+		f4=Fraccion.new(n,d)
+		f4.min
+		"#{f4.n/f4.d}"
+	end
 end
 
 

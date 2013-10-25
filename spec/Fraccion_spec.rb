@@ -86,5 +86,11 @@ describe Fraccion do
 			@f.*(f3).should eq("1/1")
 		end
 	end
+	describe "Control de resultado de division en forma reducida" do
+		it "Comprobando resultado de division" do
+			f3=Fraccion.new(4,2)
+			@f./(f3).should eq("1/4")
+		end
+	end
 
 end
