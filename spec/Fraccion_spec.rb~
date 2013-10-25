@@ -70,7 +70,9 @@ describe Fraccion do
 	describe "Control de resultado de suma en forma reducida" do
 		it "Comprobando resultado de suma" do
 			f3=Fraccion.new(4,2)
-			@f.+(f3).should eq(1)
+			@f.+(f3).should eq("5/2")
 		end
 	end
+
+
 end

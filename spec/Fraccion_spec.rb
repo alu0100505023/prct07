@@ -73,4 +73,12 @@ describe Fraccion do
 			@f.+(f3).should eq("5/2")
 		end
 	end
+	describe "Control de resultado de resta en forma reducida" do
+		it "Comprobando resultado de resta" do
+			f3=Fraccion.new(4,2)
+			@f.-(f3).should eq("-3/2")
+		end
+	end
+
+
 end

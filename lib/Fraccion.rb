@@ -54,6 +54,14 @@ class Fraccion
 	def opuesto
 		Fraccion.new(-@n,@d)
 	end
+	def + (other)
+		n=(@n*other.d)+(@d*other.n)
+		d=(@d*other.d)
+		f4=Fraccion.new(n,d)
+		f4.min
+		"#{f4.n/f4.d}"
+	end
+	
 end
 
 
