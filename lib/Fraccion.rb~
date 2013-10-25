@@ -60,6 +60,7 @@ class Fraccion
 		f4=Fraccion.new(n,d)
 		f4.min
 		"#{f4.n/f4.d}"
+	end
 	
 end
 

@@ -80,5 +80,11 @@ describe Fraccion do
 		end
 	end
 
+	describe "Control de resultado de multiplicacion en forma reducida" do
+		it "Comprobando resultado de multiplicacion" do
+			f3=Fraccion.new(4,2)
+			@f.*(f3).should eq("1/1")
+		end
+	end
 
 end
