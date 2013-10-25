@@ -55,5 +55,10 @@ describe Fraccion do
 		end
 	end
 
+	describe "Control de fraccion reciproca" do
+		it "Comprobando reciprocidad con el metodo reciprocal" do
+			@f.reciprocal.to_s.should eq("4/2")
+		end
+	end
 		
 end

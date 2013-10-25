@@ -44,8 +44,10 @@ class Fraccion
 		if @d < 0
 			d = -@d
 		end
-
 		Fraccion.new(n, d)
+	end
+	def reciprocal
+		Fraccion.new(@d,@n)
 	end
 end
 

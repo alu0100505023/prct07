@@ -46,6 +46,10 @@ class Fraccion
 		end
 		Fraccion.new(n, d)
 	end
+
+	def reciprocal
+		Fraccion.new(@d,@n)
+	end
 end
 
 

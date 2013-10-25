@@ -60,5 +60,10 @@ describe Fraccion do
 			@f.reciprocal.to_s.should eq("4/2")
 		end
 	end
-		
+
+	describe "Control de la fraccion opuesta" do
+		it "Comprobando la fraccion opuesta" do
+			@f.opuesta.to_s.should eq("-2/4")
+		end
+	end
 end
