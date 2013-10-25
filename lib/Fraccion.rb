@@ -130,7 +130,13 @@ class Fraccion
 			return false
 		end
 	end
-
+	
+	def mulabs (other)
+		f5=Fraccion.new(0,0)
+		f4=Fraccion.new(n=@n*other.n,d=@d*other.d)
+		f4.abs
+	end	
+		
 end
 
 

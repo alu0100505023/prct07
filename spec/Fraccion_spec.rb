@@ -125,7 +125,13 @@ describe Fraccion do
 			@f.>=(f5).should eq(true)
 		end
 	end
+	describe "Control de multiplicacion de fracciones con resultado valor absoluto" do
 	
+		it "Comprobacion de resultado de multiplicacion de fraciones y valor absoluto" do
+			f6=Fraccion.new(-4,2)
+			@f.mulabs(f6).to_s.should eq("8/8")
+		end
+	end	
 	
 
 end
