@@ -50,6 +50,10 @@ class Fraccion
 	def reciprocal
 		Fraccion.new(@d,@n)
 	end
+	
+	def opuesto
+		Fraccion.new(-@n,@d)
+	end
 end
 
 

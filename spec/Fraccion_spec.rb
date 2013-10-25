@@ -66,4 +66,11 @@ describe Fraccion do
 			@f.opuesta.to_s.should eq("-2/4")
 		end
 	end
+	
+	describe "Control de resultado de suma en forma reducida" do
+		it "Comprobando resultado de suma" do
+			f3=Fraccion.new(4,2)
+			@f.+(f3).should eq("5/2")
+		end
+	end
 end
