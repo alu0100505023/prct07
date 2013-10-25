@@ -92,5 +92,11 @@ describe Fraccion do
 			@f./(f3).should eq("1/4")
 		end
 	end
+	describe "Control de calculo del resto de dos fracciones" do
+		it "Comprobando resto de fracciones" do
+			f4=Fraccion.new(5,2)
+			@f.%(f4).to_s.should eq("4")
+		end
+	end
 
 end
