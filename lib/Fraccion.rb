@@ -19,6 +19,14 @@ class Fraccion
 			self.min
 		end
 	end
+
+	def getn
+		return @n
+	end
+	
+	def getd
+		return @d
+	end
 			
 end
 

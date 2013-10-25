@@ -33,4 +33,10 @@ describe Fraccion do
 		end
 	end
 	
+	describe "Mostrando por consola la fraccion en flotante" do
+		it "Comprobando si se muestra la fraccion flotante" do
+			@f.flotante.should eq("#{@f.n()/@f.d()}")
+		end
+	end
+	
 end
