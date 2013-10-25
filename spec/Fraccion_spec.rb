@@ -119,6 +119,12 @@ describe Fraccion do
 			@f.<=(f5).should eq(true)
 		end
 	end
+	describe "Control de si una fraccion es mayor o igual que otra" do
+		it "comprobacion de si una fracccion es mayor o igual que otra" do
+			f5=Fraccion.new(2,4)
+			@f.>=(f5).should eq(true)
+		end
+	end
 	
 	
 
