@@ -28,9 +28,9 @@ class Fraccion
 		return @d
 	end
 	
-	def flotante
+	def to_f
 		puts "Flotante: #{@n.to_f/@d.to_f}"
-		"#{@n/@d}"
+		"#{@n.to_f/@d.to_f}"
 	end
 
 	def abs
@@ -82,6 +82,8 @@ class Fraccion
 		f4.min
 		"#{f4.n/f4.d}"
 	end
+
+=begin
 	def % (other)
 		a=@n*other.getd()
 		b=@d*other.getn()
@@ -130,7 +132,7 @@ class Fraccion
 			return false
 		end
 	end
-	
+=end	
 	def mulabs (other)
 		f5=Fraccion.new(0,0)
 		f4=Fraccion.new(n=@n*other.n,d=@d*other.d)

@@ -35,7 +35,7 @@ describe Fraccion do
 	
 	describe "Mostrando por consola la fraccion en flotante" do
 		it "Comprobando si se muestra la fraccion flotante" do
-			@f.flotante.should eq("#{@f.getn()/@f.getd()}")
+			@f.to_f.should eq("0.5")
 		end
 	end
 
