@@ -67,66 +67,64 @@ describe Fraccion do
 		end
 	end
 	
-	describe "Control de resultado de suma en forma reducida" do
+	describe "Control de resultado de las operaciones aritmeticas de las fracciones" do
 		it "Comprobando resultado de suma" do
 			f3=Fraccion.new(4,2)
 			@f.+(f3).should eq("5/2")
 		end
-	end
-	describe "Control de resultado de resta en forma reducida" do
+	
+	
 		it "Comprobando resultado de resta" do
 			f3=Fraccion.new(4,2)
 			@f.-(f3).should eq("-3/2")
 		end
-	end
+	
 
-	describe "Control de resultado de multiplicacion en forma reducida" do
+	
 		it "Comprobando resultado de multiplicacion" do
 			f3=Fraccion.new(4,2)
 			@f.*(f3).should eq("1/1")
 		end
-	end
-	describe "Control de resultado de division en forma reducida" do
+	
+	
 		it "Comprobando resultado de division" do
 			f3=Fraccion.new(4,2)
 			@f./(f3).should eq("1/4")
 		end
-	end
-	describe "Control de calculo del resto de dos fracciones" do
+	
+	
 		it "Comprobando resto de fracciones" do
 			f4=Fraccion.new(5,2)
 			@f.%(f4).to_s.should eq("4")
 		end
 	end
 
-	describe "Control de si una fraccion es menor que otra" do
+	describe "Control de las comparaciones entre fracciones" do
 		it "comprobacion de si una fracccion es menor que otra" do
 			f5=Fraccion.new(3,4)
 			@f.<(f5).should eq(true)
 		end
-	end
 
-	describe "Control de si una fraccion es mayor que otra" do
+
 		it "comprobacion de si una fracccion es mayor que otra" do
 			f5=Fraccion.new(3,4)
 			@f.>(f5).should eq(false)
 		end
-	end
 	
-	describe "Control de si una fraccion es menor o igual que otra" do
+	
+
 		it "comprobacion de si una fracccion es menor o igual que otra" do
 			f5=Fraccion.new(2,4)
 			@f.<=(f5).should eq(true)
 		end
-	end
-	describe "Control de si una fraccion es mayor o igual que otra" do
+	
+
 		it "comprobacion de si una fracccion es mayor o igual que otra" do
 			f5=Fraccion.new(2,4)
 			@f.>=(f5).should eq(true)
 		end
-	end
+
 	
-	describe "Comprobar si una fraccion esta entre otras dos fracciones" do
 		it "comprobacion del uso de between" do
 			f6=Fraccion.new(4,4)
 			f7=Fraccion.new(3,4)
