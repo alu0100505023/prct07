@@ -125,6 +125,16 @@ describe Fraccion do
 			@f.>=(f5).should eq(true)
 		end
 	end
+	
+	describe "Comprobar si una fraccion esta entre otras dos fracciones" do
+		it "comprobacion del uso de between" do
+			f6=Fraccion.new(4,4)
+			f7=Fraccion.new(3,4)
+			f7.between?(@f,f6).should eq(true)
+		end
+	end	
+
+	
 	describe "Control de multiplicacion de fracciones con resultado valor absoluto" do
 	
 		it "Comprobacion de resultado de multiplicacion de fraciones y valor absoluto" do
